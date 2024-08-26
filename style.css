@@ -1,83 +1,81 @@
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #9a8dcc;
+    background-color: #f0f0f0; /* A more neutral background color */
 }
 
 #main {
     height: 40vh;
-    /* margin-top: 19px; */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 72px;
-    border: 2px solid red;
-    padding-top: 28px;
-    background-color: #e791e3;
-    border-radius: 68px;
-    padding-right: 50px;
-    padding-left: 50px;
-    box-shadow: 12px 9px 13px 3px rgb(46, 43, 43);
-}
-#headline{
-    font-size: 54px;
-    font-weight: 800;
-    text-shadow: 3px 0px white;
-}  
-#main2{
-    display: flex;
-    justify-content: center;
-}
-#main3{
-    display: flex;
-    justify-content: center;
-}
-#temp{
-    margin-right: 14px;
-    margin-top: 8px;
-    margin-bottom: 9px;
-    border: 4px solid black;
-    border-radius: 16px;
-    padding: 5px 10px;
-}
-#Result{
-    margin-right: 14px;
-    margin-top: 8px;
-    margin-bottom: 9px;
-    border: 2px solid black;
-    border-radius: 16px;
-    padding: 5px 10px;
-    background-color: black;
-    border: 4px solid #00e923;
-    color: #00e900;
-    min-width: 161px;
-    min-height: 14px;
-    text-align: center;
-}
-.options {
-    margin-top: 8px;
-    margin-bottom: 9px;
-    border: 2px solid black;
-    border-radius: 16px;
-    padding: 5px 10px;
-    background-color: #f0f091;
-    color: black;
-}
-#submit{
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
+    padding: 40px 60px; /* Adjusted padding for better spacing */
+    background-color: #ffffff; /* Changed to a cleaner white background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a modern look */
 }
 
-#submit_btn{
-    margin-right: 14px;
-    border: 2px solid black;
-    border-radius: 16px;
-    background-color: #73d873;
-    padding: 5px 10px;
-    font-size: 20px;
+#headline {
+    font-size: 2.5rem; /* Adjusted for responsiveness */
+    font-weight: bold;
+    color: #333; /* Darker text color for better contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+#main2, #main3 {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0; /* Unified margin for consistency */
+}
+
+#temp, #Result, .options {
+    margin: 10px;
+    border-radius: 10px; /* Slightly rounded corners for a cleaner look */
+    padding: 10px 15px; /* Increased padding for better spacing */
+}
+
+#temp {
+    border: 2px solid #333; /* Darker border for better contrast */
+}
+
+#Result {
+    border: 2px solid #00e923;
+    background-color: #00e923;
+    color: #fff;
+    min-width: 162px;
+    min-height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.options {
+    border: 2px solid #333; /* Darker border for better contrast */
+    background-color: #f9f9f9; /* Light background for a clean look */
+    color: #333; /* Dark text color for readability */
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+#submit_btn {
+    border: 2px solid #333; /* Darker border for better contrast */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    background-color: #4caf50; /* Updated to a standard green */
+    color: #fff; /* White text for readability */
+    padding: 10px 20px; /* Increased padding for a better button size */
+    font-size: 1rem; /* Adjusted font size for consistency */
+    cursor: pointer; /* Pointer cursor for interactive elements */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+#submit_btn:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    border-color: #388e3c; /* Darker border on hover */
 }
